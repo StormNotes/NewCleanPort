@@ -1,5 +1,30 @@
 body {
   background-color: rgba(8, 6, 6, 0.884);
+  font-family: 'Cinzel', serif;
+}
+
+body .container {
+  border: 2px solid white;
+  margin-top: 60px;
+  width: 50%;
+  padding: 30px;
+}
+
+body .container a {
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
+
+body .container .iconLinkedin {
+  float: right;
+  border: none;
+  background-color: #fff;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  height: 70px;
+  width: 70px;
 }
 
 body h6 a {
@@ -34,6 +59,7 @@ body section h2 {
 }
 
 body .container {
+  width: 90%;
   border: rgba(255, 168, 6, 0.589) solid 2x;
 }
 
@@ -47,17 +73,26 @@ body img {
   background-color: rgba(64, 73, 146, 0.534);
 }
 
+body .Copyright {
+  display: none;
+}
+
 body section:nth-child(2) .col {
   margin-left: 15px;
   padding: 20px;
 }
 
 body section:nth-child(2) .sub-tittle {
-  width: 100%;
   background-color: rgba(240, 248, 255, 0.199);
   border: rgba(255, 166, 0, 0.548) solid 2px;
   border-radius: 20px;
   padding: 18px;
   margin: 12px;
+}
+
+@media only screen and (min-width: 320px) {
+  body section:nth-child(2) body {
+    background-color: red;
+  }
 }
 /*# sourceMappingURL=main.css.map */
