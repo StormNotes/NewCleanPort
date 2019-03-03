@@ -1,0 +1,25 @@
+{
+  "name": "leo",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "echo \nothing going on here!"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StormNotes/NewCleanPort.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Leonardo diaz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StormNotes/NewCleanPort/issues"
+  },
+  "homepage": "https://github.com/StormNotes/NewCleanPort#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

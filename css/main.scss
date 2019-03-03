@@ -1,112 +1,106 @@
-$paddingTwo: 10px;
-$padding : 18px;
-$paddingcont: 30px;
-$margin: 12px;
+$primary-color: #444;
+$secondary-color: #7aa6f8;
+$show-home-image:true;
+$home-image: url(../img/codf.jpg);
+$b-opacity: 0.5;
 
-$tablet: "only screen and (min-width : 320px)";
 
-body{    
+@mixin easeout{
+    transition: 1.2s;
+}
 
-    .container{
-        border: 2px solid white;
-        margin-top:60px;
-        width: 50%;
-        padding: $paddingcont ;
+@mixin background{
+    @if $show-home-image{
+        &#bg-img{
+            background: $home-image;
+            background-attachment: fixed;
+            background-size:cover;
 
-        a{  
-            color: white;
-            text-align: center;
-            padding: $padding;
-
+            &:after{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba($primary-color,$b-opacity);
+                z-index: -1;
+            }
         }
-
-        .iconLinkedin{
-            
-            float: right;
-            border: none;
-            background-color: #fff;
-            align-items: right;
-            height: 70px;
-            width: 70px;
-        }
-    }
-
-    background-color: rgba(8, 6, 6, 0.884);
-    font-family: 'Cinzel', serif;
-
-    h6 a{
-        color:rgb(255, 255, 255);
-        text-decoration: none;
-        transition: 1.2s;
-        
-    }
-
-    h6 a:hover{
-        
-        text-decoration: none;
-    }
-
-    h5 a{
-        color:rgb(0, 140, 255);
-        text-decoration: none;
-        transition: 1.2s;
-
-        
-    }
-
-    h5 a:hover{
-
-        text-decoration: none;
-    }
-
-    section h3{
-        color:white;
-        padding: $padding;
-    }
-
-    section h2{
-        color:white;
-    }
-
-    .container{ 
-        width: 90%;
-
-        border: rgba(255, 168, 6, 0.589) solid 2x;
-    }
-    
-    img{
-        margin:  auto;
-        padding: $padding;
-        height: 200px;
-        width: 200px;
-        border-radius: 10px;
-        border: 2px solid black;
-        background-color: rgba(64, 73, 146, 0.534);
-
-    }
-
-    .Copyright{
-        display:none;
     }
 }
 
 
-body section:nth-child(2){
 
-    .col{
-        margin-left:15px;
-        padding: 20px;
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    @include background;
+    background-color: $primary-color; 
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+h1,h2,h3{
+    color: #fff;
+    margin: 0;
+    font-weight: 400;
+    &.lg-heading{
+        font-size: 4rem;
     }
-    .sub-tittle{
-        background-color: rgba(240, 248, 255, 0.199);
-        border: rgba(255, 166, 0, 0.548) solid 2px;
-        border-radius: 20px;
-        padding: $padding;
-        margin: $margin;
+    &.sm-heading{
+        margin-bottom: 3rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($primary-color,0.5),0.1);
     }
-    @media #{$tablet}{
-        body{
-            background-color: red;
+
+}
+a{
+    color:white;
+    text-decoration: none;
+
+    &:hover{
+        color:$secondary-color;
+        text-decoration: none;
+        
+    }
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+.textSecond{
+    color:$secondary-color;
+}
+
+main{
+
+    padding:4rem;
+    height: 100%;
+
+    .icons{
+        margin-top: 1rem;
+
+        a{
+            padding: 0.6rem;
+            @include easeout();
+            &:hover{
+                color:$secondary-color;
+            }
+        }
+    }
+
+    &#home{
+        overflow:hidden;
+        h1{
+            margin-top:22vh;
         }
     }
 }
