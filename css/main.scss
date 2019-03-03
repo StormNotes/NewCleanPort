@@ -1,8 +1,10 @@
+
 $primary-color: #444;
 $secondary-color: #7aa6f8;
 $show-home-image:true;
 $home-image: url(../img/codf.jpg);
 $b-opacity: 0.5;
+
 
 
 @mixin easeout{
@@ -15,7 +17,7 @@ $b-opacity: 0.5;
             background: $home-image;
             background-attachment: fixed;
             background-size:cover;
-
+            
             &:after{
                 content: '';
                 position: absolute;
@@ -29,6 +31,7 @@ $b-opacity: 0.5;
         }
     }
 }
+
 
 
 
@@ -77,7 +80,13 @@ header{
     width: 100%;
 }
 .textSecond{
+    
     color:$secondary-color;
+    padding: 4px;
+    @include easeout();
+    &:hover{
+        color:rgb(131, 184, 253);
+    }
 }
 
 main{
@@ -105,3 +114,28 @@ main{
     }
 }
 
+
+.menu-btn{
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    @include easeout;
+
+    .btn-line{
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0;
+        background: white;
+        @include easeout;
+    }
+
+    &.close{
+        transform: rotate(-90deg);
+        
+        .btn-line{
+            background:rgb(255, 230, 0);
+        }
+    }
+}

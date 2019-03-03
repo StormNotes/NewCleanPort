@@ -62,6 +62,13 @@ header {
 
 .textSecond {
   color: #7aa6f8;
+  padding: 4px;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.textSecond:hover {
+  color: #83b8fd;
 }
 
 main {
@@ -89,5 +96,33 @@ main#home {
 
 main#home h1 {
   margin-top: 22vh;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: white;
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.menu-btn.close {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.menu-btn.close .btn-line {
+  background: #ffe600;
 }
 /*# sourceMappingURL=main.css.map */
