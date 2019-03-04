@@ -200,7 +200,9 @@ main#home h1 {
 }
 
 .menu-branding {
-  background: #7aa6f8;
+  background: url("../img/forest-path.jpg");
+  background-attachment: fixed;
+  background-size: cover;
   -webkit-transition: 2.1s;
   transition: 2.1s;
   opacity: 1;
@@ -231,8 +233,9 @@ main#home h1 {
 }
 
 @media only screen and (max-width: 777px) {
-  .menu-branding .portrait-branding {
-    background: green;
+  .menu-branding .portrait {
+    background: url("");
+    border: solid 0px #444;
   }
 }
 /*# sourceMappingURL=main.css.map */

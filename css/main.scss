@@ -210,7 +210,9 @@ main{
              }
 
              &-branding{
-                 background: $secondary-color;
+                 background: url('../img/forest-path.jpg');
+                 background-attachment: fixed;
+                        background-size:cover;  
                  @include easeout2();
                  transform: translate3d(-200%,0,0);
 
@@ -236,9 +238,8 @@ main{
                      border: solid 3px $primary-color;
 
                      @media only screen and (max-width: $break-small) {
-                     &-branding{
-                         background: green;
-                     }
+                        background: url('');
+                        border: solid 0px $primary-color;
                     }
 
                  }
