@@ -63,8 +63,8 @@ header {
 .textSecond {
   color: #7aa6f8;
   padding: 4px;
-  -webkit-transition: 1.2s;
-  transition: 1.2s;
+  -webkit-transition: 1.8s;
+  transition: 1.8s;
 }
 
 .textSecond:hover {
@@ -77,13 +77,13 @@ main {
 }
 
 main .icons {
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 main .icons a {
-  padding: 0.6rem;
-  -webkit-transition: 1.2s;
-  transition: 1.2s;
+  padding: 2rem;
+  -webkit-transition: 1.8s;
+  transition: 1.8s;
 }
 
 main .icons a:hover {
@@ -104,8 +104,8 @@ main#home h1 {
   right: 35px;
   top: 35px;
   cursor: pointer;
-  -webkit-transition: 1.2s;
-  transition: 1.2s;
+  -webkit-transition: 1.8s;
+  transition: 1.8s;
 }
 
 .menu-btn .btn-line {
@@ -113,8 +113,8 @@ main#home h1 {
   height: 3px;
   margin: 0 0 5px 0;
   background: white;
-  -webkit-transition: 1.2s;
-  transition: 1.2s;
+  -webkit-transition: 1.8s;
+  transition: 1.8s;
 }
 
 .menu-btn.close {
@@ -153,7 +153,7 @@ main#home h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  float: left;
+  float: right;
   width: 50%;
   height: 100vh;
   overflow: hidden;
@@ -165,10 +165,10 @@ main#home h1 {
   padding: 0;
   background: #3f3f3f;
   list-style: none;
-  -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
-  -webkit-transition: 1.2s;
-  transition: 1.2s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+  -webkit-transition: 1.8s;
+  transition: 1.8s;
 }
 
 .menu-nav.show {
@@ -177,15 +177,31 @@ main#home h1 {
 }
 
 .menu-nav a {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 777px) {
+  .menu-nav a {
+    padding-top: 2rem;
+    font-size: 2rem;
+  }
 }
 
 .menu-branding {
   background: #7aa6f8;
-  -webkit-transition: 1.2s;
-  transition: 1.2s;
-  -webkit-transform: translate3d(0, 100%, 0);
-          transform: translate3d(0, 100%, 0);
+  -webkit-transition: 2.1s;
+  transition: 2.1s;
+  opacity: 1;
+  -webkit-transform: translate3d(-200%, 0, 0);
+          transform: translate3d(-200%, 0, 0);
+}
+
+@media only screen and (max-width: 777px) {
+  .menu-branding {
+    background: url("../img/dark-eeri.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+  }
 }
 
 .menu-branding.show {
@@ -200,5 +216,11 @@ main#home h1 {
   background: url("../img/index.png");
   border-radius: 50%;
   border: solid 3px #444;
+}
+
+@media only screen and (max-width: 777px) {
+  .menu-branding .portrait-branding {
+    background: green;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -4,11 +4,18 @@ $secondary-color: #7aa6f8;
 $show-home-image:true;
 $home-image: url(../img/codf.jpg);
 $b-opacity: 0.5;
+$break-small: 777px;
+
 
 
 
 @mixin easeout{
-    transition: 1.2s;
+    transition:1.8s;
+}
+
+@mixin easeout2{
+    transition: 2.1s;
+    opacity: 1;
 }
 
 @mixin background{
@@ -95,10 +102,12 @@ main{
     height: 100%;
 
     .icons{
-        margin-top: 1rem;
+        
+        margin-top: 3rem;
 
+        
         a{
-            padding: 0.6rem;
+            padding: 2rem;
             @include easeout();
             &:hover{
                 color:$secondary-color;
@@ -159,7 +168,7 @@ main{
         flex-flow: column wrap;
         align-items: center;
         justify-content: center;
-        float: left;
+        float: right;
         width: 50%;
         height: 100vh;
         overflow: hidden;
@@ -171,21 +180,38 @@ main{
                  padding: 0;
                  background: darken($primary-color,2);
                  list-style: none;
-                 transform: translate3d(0,-100%,0);
+                 transform: translate3d(-100%,0,0);
                  @include easeout();
 
                  &.show{
                      transform: translate3d(0,0,0);
                  }
                  a{
-                     font-size: 2rem;
+                     font-size: 3rem;
+                 }
+
+                 @media only screen and (max-width: $break-small) {
+                     a{
+                         padding-top: 2rem;
+                         font-size: 2rem;
+                     }
+
                  }
              }
 
              &-branding{
                  background: $secondary-color;
-                 @include easeout();
-                 transform: translate3d(0,100%,0);
+                 @include easeout2();
+                 transform: translate3d(-200%,0,0);
+
+                 @media only screen and (max-width: $break-small) {
+
+                    
+                        background: url('../img/dark-eeri.jpg');
+                        background-attachment: fixed;
+                        background-size:cover;                        
+                        
+                    }
 
                  &.show{
                     transform: translate3d(0,0,0);
@@ -198,6 +224,12 @@ main{
                      background: url('../img/index.png');
                      border-radius: 50%;
                      border: solid 3px $primary-color;
+
+                     @media only screen and (max-width: $break-small) {
+                     &-branding{
+                         background: green;
+                     }
+                    }
 
                  }
              }
