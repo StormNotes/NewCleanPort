@@ -23,9 +23,19 @@ body#bg-img:after {
   top: 0;
   right: 0;
   width: 100%;
-  height: 100vh;
-  background: rgba(68, 68, 68, 0.5);
-  z-index: -1;
+  height: 100%;
+  z-index: -2;
+}
+
+body .wip {
+  font-size: 3rem;
+  color: #ff9113;
+}
+
+@media only screen and (max-width: 777px) {
+  body .wip {
+    font-size: 2rem;
+  }
 }
 
 h1, h2, h3 {
@@ -39,7 +49,7 @@ h1.lg-heading, h2.lg-heading, h3.lg-heading {
 }
 
 h1.sm-heading, h2.sm-heading, h3.sm-heading {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   padding: 0.2rem 1rem;
   background: rgba(69, 69, 69, 0.1);
 }
@@ -50,7 +60,7 @@ a {
 }
 
 a:hover {
-  color: #7aa6f8;
+  color: #e96914;
   text-decoration: none;
 }
 
@@ -61,18 +71,34 @@ header {
 }
 
 .textSecond {
-  color: #7aa6f8;
+  color: #e96914;
   padding: 4px;
   -webkit-transition: 1.8s;
   transition: 1.8s;
 }
 
 .textSecond:hover {
-  color: #83b8fd;
+  color: #f18f57;
+}
+
+.textThree {
+  color: #f18f57;
+}
+
+.top {
+  padding: 20px;
+}
+
+.mid {
+  padding: 20px;
+}
+
+.bot {
+  padding: 20px;
 }
 
 main {
-  padding: 4rem;
+  padding: 3rem;
   height: 100%;
 }
 
@@ -93,7 +119,7 @@ main .icons a {
 }
 
 main .icons a:hover {
-  color: #7aa6f8;
+  color: #e96914;
 }
 
 main#home {
@@ -236,6 +262,30 @@ main#home h1 {
   .menu-branding .portrait {
     background: url("");
     border: solid 0px #444;
+  }
+}
+
+#homegrid {
+  height: 100vh;
+}
+
+#homegrid .grid {
+  margin: 0.5rem;
+  background: rgba(0, 0, 0, 0.212);
+}
+
+#homegrid .grid img {
+  height: 200px;
+  width: 200px;
+  padding: 0.5rem;
+  margin: 2.1rem;
+  background: #74340a;
+  border-radius: 20% 3% 20% 3%;
+}
+
+@media only screen and (max-width: 777px) {
+  #homegrid .grid img {
+    border-radius: 30% 5% 30% 5%;
   }
 }
 /*# sourceMappingURL=main.css.map */

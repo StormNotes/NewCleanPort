@@ -1,5 +1,5 @@
 
-
+console.table("welcome to my portfolio, hello there");
 
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
