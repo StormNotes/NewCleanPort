@@ -32,7 +32,7 @@ body .wip {
   color: #ff9113;
 }
 
-@media only screen and (max-width: 777px) {
+@media only screen and (max-width: 750px) {
   body .wip {
     font-size: 2rem;
   }
@@ -130,7 +130,7 @@ main#home h1 {
   margin-top: 22vh;
 }
 
-@media only screen and (max-width: 777px) {
+@media only screen and (max-width: 750px) {
   main#home h1 {
     margin-top: 5vh;
   }
@@ -218,7 +218,7 @@ main#home h1 {
   font-size: 3rem;
 }
 
-@media only screen and (max-width: 777px) {
+@media only screen and (max-width: 750px) {
   .menu-nav a {
     padding-top: 2rem;
     font-size: 2rem;
@@ -236,7 +236,7 @@ main#home h1 {
           transform: translate3d(-200%, 0, 0);
 }
 
-@media only screen and (max-width: 777px) {
+@media only screen and (max-width: 750px) {
   .menu-branding {
     background: url("../img/dark-eeri.jpg");
     background-attachment: fixed;
@@ -258,7 +258,7 @@ main#home h1 {
   border: solid 3px #444;
 }
 
-@media only screen and (max-width: 777px) {
+@media only screen and (max-width: 750px) {
   .menu-branding .portrait {
     background: url("");
     border: solid 0px #444;
@@ -270,7 +270,7 @@ main#home h1 {
 }
 
 #homegrid .grid {
-  margin: 0.5rem;
+  margin: 2rem;
   background: rgba(0, 0, 0, 0.212);
 }
 
@@ -278,12 +278,12 @@ main#home h1 {
   height: 200px;
   width: 200px;
   padding: 0.5rem;
-  margin: 2.1rem;
+  margin: 1rem;
   background: #74340a;
   border-radius: 20% 3% 20% 3%;
 }
 
-@media only screen and (max-width: 777px) {
+@media only screen and (max-width: 750px) {
   #homegrid .grid img {
     border-radius: 30% 5% 30% 5%;
   }

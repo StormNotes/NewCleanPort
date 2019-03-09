@@ -3,8 +3,8 @@ $primary-color: #444;
 $secondary-color: #e96914;
 $show-home-image:true;
 $home-image: url(../img/codf.jpg);
-$b-opacity: 0.0;
-$break-small: 777px;
+$b-opacity: 0.9;
+$break-small: 750px;
 
 
 
@@ -287,7 +287,7 @@ main{
             height: 200px;
             width: 200px;
             padding: 0.5rem;
-            margin: 2.1rem;
+            margin: 1rem;
             background: darken($secondary-color,25);
             border-radius: 20% 3% 20% 3%;
 
@@ -295,7 +295,7 @@ main{
                 border-radius: 30% 5% 30% 5%;
             }
         }
-        margin: 0.5rem; 
+        margin: 2rem; 
         background: rgba(0, 0, 0, 0.212);
     }
 }
