@@ -29,7 +29,7 @@ body#bg-img:after {
 
 body .wip {
   font-size: 3rem;
-  color: #ff9113;
+  color: #b65801;
 }
 
 @media only screen and (max-width: 750px) {
@@ -41,7 +41,7 @@ body .wip {
 h1, h2, h3 {
   color: #fff;
   margin: 0;
-  font-weight: 400;
+  font-weight: 450;
 }
 
 h1.lg-heading, h2.lg-heading, h3.lg-heading {
@@ -50,8 +50,13 @@ h1.lg-heading, h2.lg-heading, h3.lg-heading {
 
 h1.sm-heading, h2.sm-heading, h3.sm-heading {
   margin-bottom: 2rem;
-  padding: 0.2rem 1rem;
-  background: rgba(69, 69, 69, 0.1);
+  padding: 0.4rem;
+  background: rgba(70, 70, 70, 0.1);
+}
+
+h1.wip, h2.wip, h3.wip {
+  margin-bottom: 2rem;
+  padding: 0.4rem;
 }
 
 a {
@@ -86,14 +91,17 @@ header {
 }
 
 .top {
+  background-color: rgba(43, 41, 41, 0.288);
   padding: 20px;
 }
 
 .mid {
+  background-color: rgba(43, 41, 41, 0.288);
   padding: 20px;
 }
 
 .bot {
+  background-color: rgba(43, 41, 41, 0.288);
   padding: 20px;
 }
 
@@ -231,7 +239,7 @@ main#home h1 {
   background-size: cover;
   -webkit-transition: 2.1s;
   transition: 2.1s;
-  opacity: 1;
+  opacity: 2;
   -webkit-transform: translate3d(-200%, 0, 0);
           transform: translate3d(-200%, 0, 0);
 }
@@ -270,8 +278,9 @@ main#home h1 {
 }
 
 #homegrid .grid {
-  margin: 2rem;
-  background: rgba(0, 0, 0, 0.212);
+  padding: 2.5rem;
+  margin: 1.5rem;
+  background: rgba(0, 0, 0, 0.438);
 }
 
 #homegrid .grid img {
