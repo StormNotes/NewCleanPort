@@ -7,12 +7,12 @@ body {
   background-color: #444;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Lora', serif;
   line-height: 1.6;
 }
 
 body#bg-img {
-  background: url(../img/codf.jpg);
+  background: url(../img/codf2.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -51,7 +51,6 @@ h1.lg-heading, h2.lg-heading, h3.lg-heading {
 h1.sm-heading, h2.sm-heading, h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0.4rem;
-  background: rgba(70, 70, 70, 0.1);
 }
 
 h1.wip, h2.wip, h3.wip {
@@ -78,8 +77,8 @@ header {
 .textSecond {
   color: #e96914;
   padding: 4px;
-  -webkit-transition: 1.8s;
-  transition: 1.8s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .textSecond:hover {
@@ -122,8 +121,8 @@ main .icons {
 
 main .icons a {
   padding: 2rem;
-  -webkit-transition: 1.8s;
-  transition: 1.8s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 main .icons a:hover {
@@ -150,8 +149,8 @@ main#home h1 {
   right: 35px;
   top: 35px;
   cursor: pointer;
-  -webkit-transition: 1.8s;
-  transition: 1.8s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .menu-btn .btn-line {
@@ -159,8 +158,8 @@ main#home h1 {
   height: 3px;
   margin: 0 0 5px 0;
   background: white;
-  -webkit-transition: 1.8s;
-  transition: 1.8s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .menu-btn.close {
@@ -209,12 +208,12 @@ main#home h1 {
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #3f3f3f;
+  background: url("../img/dark-eeri.jpg");
   list-style: none;
   -webkit-transform: translate3d(-100%, 0, 0);
           transform: translate3d(-100%, 0, 0);
-  -webkit-transition: 1.8s;
-  transition: 1.8s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .menu-nav.show {
@@ -223,7 +222,7 @@ main#home h1 {
 }
 
 .menu-nav a {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 @media only screen and (max-width: 750px) {
@@ -234,11 +233,11 @@ main#home h1 {
 }
 
 .menu-branding {
-  background: url("../img/forest-path.jpg");
+  background: url("../img/darkforest.jpg");
   background-attachment: fixed;
-  background-size: cover;
-  -webkit-transition: 2.1s;
-  transition: 2.1s;
+  background-size: normal;
+  -webkit-transition: 1s;
+  transition: 1s;
   opacity: 2;
   -webkit-transform: translate3d(-200%, 0, 0);
           transform: translate3d(-200%, 0, 0);
@@ -246,9 +245,9 @@ main#home h1 {
 
 @media only screen and (max-width: 750px) {
   .menu-branding {
-    background: url("../img/dark-eeri.jpg");
+    background: url("../img/darkforest.jpg");
     background-attachment: fixed;
-    background-size: cover;
+    background-size: normal;
   }
 }
 
@@ -261,16 +260,22 @@ main#home h1 {
   z-index: 1;
   width: 350px;
   height: 350px;
-  background: url("../img/yo.png");
-  border-radius: 50%;
-  border: solid 3px #444;
+  margin-top: -250px;
 }
 
 @media only screen and (max-width: 750px) {
   .menu-branding .portrait {
+    display: none;
     background: url("");
     border: solid 0px #444;
   }
+}
+
+.menu-branding .portrait .desc {
+  margin-top: 50px;
+  margin-left: -100px;
+  width: 570px;
+  font-size: 20px;
 }
 
 #homegrid {
