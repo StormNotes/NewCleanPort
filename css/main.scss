@@ -40,7 +40,9 @@ $break-small: 750px;
     }
 }
 
-
+html {
+    scroll-behavior: smooth;
+  }
 
 
 *{
